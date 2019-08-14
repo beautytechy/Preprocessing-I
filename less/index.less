@@ -52,8 +52,136 @@ table {
 * {
     box-sizing: border-box;
 }
+//variables
+@button-font: 'Lexend Deca', sans-serif;
+@main-heading-font: 'Source Serif Pro', serif;
+@main-color: gold;
+
+//mixins
+.buttons (){
+	padding: 10px;
+	border: 2px solid rgb(226, 43, 162);
+	border-radius: 5px;
+	background: lightcoral;
+}
+
+.wrap (){
+	display: flex;
+	flex-wrap: wrap;
+}
+
 
 html, body {
-    height: 100%;
+	height: 100%;
+	font-size: 15px;
 }
+
+p {
+	line-height: 1.5;
+	margin: 20px;
+	font-size: 1.5rem;
+}
+
+nav {
+	width: 70%;
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 20px;
+	
+	div {
+		justify-content: space-between;
+		margin: 0;
+	}
+	a {
+		padding: 10px;
+		
+		text-decoration: none;
+		font-family: Georgia, 'Times New Roman', Times, serif;
+		
+}
+} //this closes the nav
+
+.top-content {
+	.wrap;
+	align-items: center;
+	width: 70%;
+	padding: 2%;
+	margin: 20px;
+	background: lightblue;
+	
+	@media only screen and (max-width: 500px) {
+	button {
+		display: none;
+	}
+	}
+
+	img {
+		max-width: 50%;
+		margin: 20px;
+		border: 3px solid @main-color;
+	}
+	hr {
+		border: 1px solid lightgrey;
+		width: 100%;
+	}
+	h1 {
+		font-family: @main-heading-font;
+		font-size: 2rem;
+		padding: 20px;
+	}
+
+	button {
+		.buttons;
+		margin: 20px;
+		
+	}
+} //this closes top-content
+
+.bottom-content {
+	width: 100%;
+	.wrap;
+
+	.intro {
+		width: 60%;
+	} 
+	h2 {
+		color: rgb(81, 192, 229);
+		font-size: 1.5rem;
+		margin: 10px;
+		padding: 20px;
+	}
+}
+
+.top-skills {
+	width: 40%;
+	ul {
+		list-style: circle outside;
+		margin: 40px;
+		font-size: 1.2rem;
+		line-height: 2;
+
+}
+	
+} //this closes top-skills
+
+.work-history {
+	width: 70%;
+	display: flex;
+	justify-content: center;
+	table, th, td {
+		border: 1px solid black;
+		align-items: center;
+		padding: 20px;
+		margin: 20px;
+	
+	}
+}
+
+footer {
+	margin: 20px;
+	text-align: center;
+}
+
+
+
 
