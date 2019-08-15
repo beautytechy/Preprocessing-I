@@ -176,7 +176,7 @@ nav .links a {
 }
 .top-content #quote {
   font-family: 'Long Cang', cursive;
-  margin: 20px;
+  margin: 10px 20px;
 }
 .top-content .image {
   max-width: 50%;
@@ -211,10 +211,10 @@ nav .links a {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  padding: 10px;
 }
 .bottom-content .intro {
   width: 50%;
-  margin: 20px;
 }
 .bottom-content .top-skills ul {
   list-style-type: circle;
