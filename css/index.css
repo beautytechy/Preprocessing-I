@@ -137,58 +137,75 @@ body {
 }
 p {
   line-height: 1.5;
-  margin: 20px;
+  margin: 10px;
   font-size: 1.5rem;
 }
+h2 {
+  color: #51c0e5;
+  font-size: 1.5rem;
+  margin: 10px;
+}
 nav {
-  width: 70%;
+  width: 60vw;
   display: flex;
   justify-content: flex-end;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
-nav div {
+nav .links a {
   justify-content: space-between;
-  margin: 0;
-}
-nav a {
+  margin: auto;
   padding: 10px;
+  color: grey;
   text-decoration: none;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .top-content {
   display: flex;
   flex-wrap: wrap;
+  width: 60vw;
+  justify-content: center;
   align-items: center;
-  width: 70%;
-  padding: 2%;
-  margin: 20px;
   background: lightblue;
+  margin-left: 20px;
 }
 @media only screen and (max-width: 500px) {
   .top-content button {
     display: none;
   }
 }
-.top-content img {
+.top-content #quote {
+  font-family: 'Long Cang', cursive;
+  margin: 20px;
+}
+.top-content .image {
   max-width: 50%;
   margin: 20px;
-  border: 3px solid gold;
+  border: 5px solid gold;
+  border-radius: 5px;
+  justify-content: center;
+}
+.top-content img {
+  max-width: 100%;
 }
 .top-content hr {
   border: 1px solid lightgrey;
-  width: 100%;
+  width: 90%;
 }
 .top-content h1 {
   font-family: 'Source Serif Pro', serif;
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding: 20px;
+  text-align: center;
+  font-weight: 600;
 }
 .top-content button {
   padding: 10px;
   border: 2px solid #e22ba2;
-  border-radius: 5px;
+  border-radius: 15px;
   background: lightcoral;
-  margin: 20px;
+  font-size: 1.2rem;
+  margin: 10px;
 }
 .bottom-content {
   width: 100%;
@@ -196,37 +213,29 @@ nav a {
   flex-wrap: wrap;
 }
 .bottom-content .intro {
-  width: 60%;
+  width: 50%;
+  margin: 20px;
 }
-.bottom-content h2 {
-  color: #51c0e5;
-  font-size: 1.5rem;
+.bottom-content .top-skills ul {
+  list-style-type: circle;
   margin: 10px;
-  padding: 20px;
-}
-.top-skills {
-  width: 40%;
-}
-.top-skills ul {
-  list-style: circle outside;
-  margin: 40px;
-  font-size: 1.2rem;
-  line-height: 2;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
 }
 .work-history {
-  width: 70%;
-  display: flex;
-  justify-content: center;
+  width: 70vw;
+  margin: 10px;
 }
 .work-history table,
 .work-history th,
 .work-history td {
   border: 1px solid black;
-  align-items: center;
-  padding: 20px;
+  justify-content: center;
+  padding: 10px;
   margin: 20px;
 }
 footer {
+  width: 70vw;
   margin: 20px;
   text-align: center;
 }
