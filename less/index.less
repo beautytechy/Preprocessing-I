@@ -52,8 +52,147 @@ table {
 * {
     box-sizing: border-box;
 }
+//variables
+@button-font: 'Lexend Deca', sans-serif;
+@main-heading-font: 'Source Serif Pro', serif;
+@main-color: gold;
+
+//mixins
+.buttons (){
+	padding: 10px;
+	border: 2px solid rgb(226, 43, 162);
+	border-radius: 15px;
+	background: lightcoral;
+	font-size: 1.2rem;
+	margin: 10px;
+}
+
+.wrap (){
+	display: flex;
+	flex-wrap: wrap;
+}
 
 html, body {
-    height: 100%;
+	height: 100%;
+	font-size: 15px;
 }
+
+p {
+	line-height: 1.5;
+	margin: 10px;
+	font-size: 1.5rem;
+}
+
+h2 {
+	color: rgb(81, 192, 229);
+	font-size: 1.5rem;
+	margin: 10px;
+	}
+
+nav {
+	width: 60vw;
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	
+
+	.links a {
+		justify-content: space-between;
+		margin: auto;
+		padding: 10px;
+		color: grey;
+		text-decoration: none;
+		font-family: Georgia, 'Times New Roman', Times, serif;
+		
+}
+} //this closes the nav
+
+.top-content {
+	.wrap;
+	width: 60vw;
+	justify-content: center;
+	align-items: center;
+	background: lightblue;
+	margin-left: 20px;
+	
+	@media only screen and (max-width: 500px) {
+	button {
+		display: none;
+
+	}
+	}//this closes 500px media query
+	
+	#quote {
+		font-family: 'Long Cang', cursive;
+		margin: 10px 20px;
+		
+	}
+	.image {
+		max-width: 50%;
+		margin: 20px;
+		border: 5px solid @main-color;
+		border-radius: 5px;
+		justify-content: center;
+	}//this closes top-content .image
+
+	img {
+		max-width:100%;
+	}
+
+	hr {
+		border: 1px solid lightgrey;
+		width: 90%;
+	}//this closes hr
+
+	h1 {
+		font-family: @main-heading-font;
+		font-size: 1.5rem;
+		padding: 20px;
+		text-align: center;
+		font-weight: 600;
+	}//this closes top-content h1
+
+	button {
+		.buttons;
+		
+	}//this closes button
+}//this closes top-content
+
+.bottom-content {
+	width: 100%;
+	.wrap;
+	padding: 10px;
+
+	.intro {
+		width: 50%; 
+	}
+	.top-skills {
+		ul {
+			list-style-type: circle;
+			margin: 10px;
+			font-size: 1.5rem;
+			line-height: 2.5rem;
+		}//this closes top-skills ul
+	} //this closes top-skills
+}//this closes bottom-content
+
+.work-history {
+	width: 70vw;
+	margin: 10px;
+	table, th, td {
+		border: 1px solid black;
+		justify-content: center;
+		padding: 10px;
+		margin: 20px;
+	}
+}//this closes work-history
+footer {
+	width: 70vw;
+	margin: 20px;
+	text-align: center;
+}//this closes footer
+
+
+
 
